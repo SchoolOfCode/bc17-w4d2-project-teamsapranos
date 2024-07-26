@@ -26,29 +26,46 @@ app.get('/mafiaActivities', (req, res) => {
   
 })
 
+app.get('/mafiaActivities/:id', (req, res) => {
+    try {
+    const activityId = req.params.id
+    res.status(200).json({
+      "payload": mafiaActivity[activityId],
+      "success": true,
+    })
+}   catch (error){
+      res.status(400).json({
+      "payload": null,
+      "error": true,
+    })
+  }
+
+})
+
+app.use(express.json())
+import {v4 as uuid_v4} from "uuid"
+
 //ticket 4 post 
 app.post('/mafiActivities', (req, res) => {
     const userInput = req.body
-    console.log(userInput)
     if (!userInput){
       res.status(400).json({
       "payload": null,
       "error": true,
     })
   } else {
-
     const userInputActivity = {
       mafia_activity_id: uuid_v4(),
       mafia_activity_time_stamp: `${Date.now()}`,
-      ...userInputActivity,
+      ...userInput,
     }
     res.status(200).json({
-      "payload": userInput,
+      "payload": userInputActivity,
       "success": true,
     })
   }
-
 })
+
 
 
 
