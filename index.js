@@ -29,13 +29,23 @@ app.get('/mafiaActivities', (req, res) => {
 //ticket 4 post 
 app.post('/mafiActivities', (req, res) => {
     const userInput = req.body
+    console.log(userInput)
     if (!userInput){
       res.status(400).json({
       "payload": null,
       "error": true,
     })
-  }else{
-    const user
+  } else {
+
+    const userInputActivity = {
+      mafia_activity_id: uuid_v4(),
+      mafia_activity_time_stamp: `${Date.now()}`,
+      ...userInputActivity,
+    }
+    res.status(200).json({
+      "payload": userInput,
+      "success": true,
+    })
   }
 
 })
