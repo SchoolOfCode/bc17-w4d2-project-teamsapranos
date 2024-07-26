@@ -18,3 +18,5 @@ const mafiaActivity = [
 	"activity_duration": "120", // choose standard unit type (minutes probably)
 }
 ]
+
+export default mafiaActivity;

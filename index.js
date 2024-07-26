@@ -8,12 +8,13 @@ app.use(helmet())
 //res.send('Say hello to my little friend...')
 //console.log('')
 
+import mafiaActivity from './mafiaActivity.js'
 
-app.get('/mafiaActivities/:id', (req, res) => {
+app.get('/mafiaActivities', (req, res) => {
     try {
     res.status(200).json({
-    "payload": mafiaActivity.id,
-    "success": true
+      "payload": mafiaActivity,
+      "success": true,
     })
 }   catch (error){
       res.status(400).json({
