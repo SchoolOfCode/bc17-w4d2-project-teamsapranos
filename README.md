@@ -7,12 +7,6 @@ Set up Node
 ```
 node -v
 ```
-2.
-
-
-Given I am a new developer joining the team,
-When I clone down the backend repo,
-Then I should see a clear README that details how to install and run the application using Node through a command line. The application is an Express API.
 
 Instructions for installing and running application through Node using command line:
 

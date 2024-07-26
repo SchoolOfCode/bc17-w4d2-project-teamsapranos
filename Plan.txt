@@ -16,7 +16,7 @@ import helmet
 change header to not include express 
 test
 
-Epic 2 User story 1
+Epic 2 User story 3
 
 create GET request handler for user ID (DONE)
   // use endpoint /mafiaActivities as first argument 

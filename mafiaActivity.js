@@ -1,22 +1,24 @@
+//#3 create some mafia activity
 const mafiaActivity = [
 {
-	"id": "1", // UUID
-	"activity_submitted": "1719486190058", // simple Epoc timestamp (Date.now() in JS)
-	"activity_type": "racketeering ", // choose some standard types
-	"activity_duration": "30", // choose standard unit type (minutes probably)
+	"mafia_activity_id": "1", 
+	"mafia_activity_submitted": "1719486190058", 
+	"mafia_activity_type": "racketeering ", 
+	"mafia_activity_duration": "30", 
 },
 {
-	"id": "2", // UUID
-	"activity_submitted": "12432152", // simple Epoc timestamp (Date.now() in JS)
-	"activity_type": "Drive by", // choose some standard types
-	"activity_duration": "5", // choose standard unit type (minutes probably)
+	"mafia_mafia_activity_id": "2", 
+	"mafia_activity_submitted": "12432152",
+	"mafia_activity_type": "Drive by", 
+	"mafia_activity_duration": "5", 
 },
 {
-	"id": "3", // UUID
-	"activity_submitted": "5453332", // simple Epoc timestamp (Date.now() in JS)
-	"activity_type": "Boss' Daughter's wedding", // choose some standard types
-	"activity_duration": "120", // choose standard unit type (minutes probably)
+	"mafia_activity_id": "3", 
+	"mafia_activity_submitted": "5453332", 
+	"mafia_activity_type": "Boss' Daughter's wedding", 
+	"mafia_activity_duration": "120", 
 }
 ]
 
-export default mafiaActivity;
+//#3 export mafia activies
+export default mafiaActivity
