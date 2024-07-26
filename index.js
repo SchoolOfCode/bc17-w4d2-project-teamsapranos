@@ -9,7 +9,7 @@ app.use(helmet())
 //console.log('')
 
 import mafiaActivity from './mafiaActivity.js'
-
+//ticket 3 GET all activities
 app.get('/mafiaActivities', (req, res) => {
     try {
     res.status(200).json({
@@ -25,6 +25,22 @@ app.get('/mafiaActivities', (req, res) => {
   }
   
 })
+
+//ticket 4 post 
+app.post('/mafiActivities', (req, res) => {
+    const userInput = req.body
+    if (!userInput){
+      res.status(400).json({
+      "payload": null,
+      "error": true,
+    })
+  }else{
+    const user
+  }
+
+})
+
+
 
 app.listen(port, () => {
   console.log(`mafiaApp listening on port ${port}`)
